@@ -6,6 +6,7 @@
 echo "Removing old backup from repositories"
 cd /home/splinter/master_backup
 sudo git init
+sudo git config --global credential.helper cache
 sudo git rm backup.tar.gz.cpt
 sudo git commit -a # this will prompt you to make a note of changes
 sudo git push https://github.com/Splinter1021/master_backup
